@@ -1,4 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Hello world!</h1>
+    {% for curr_poke in pokemon %}
+        <div>{{ curr_poke.name }}</div>
+        <img src="{{ curr_poke.img_link }}">
+    {% endfor %}
 {% endblock %}
