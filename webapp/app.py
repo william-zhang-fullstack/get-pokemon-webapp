@@ -1,6 +1,6 @@
 import random
 from flask import Flask, render_template, url_for
-from apigets import get_pokemon
+from .apigets import get_pokemon
 
 
 NUM_TEAM = 6
